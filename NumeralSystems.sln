@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumeralSystems", "NumeralSystems\NumeralSystems.csproj", "{4B2AE2CB-11B4-4526-A081-287421D6E83E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumeralSystems.Tests", "NumeralSystems.Tests\NumeralSystems.Tests.csproj", "{A679C152-194D-4491-B001-9576AA0FC595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B2AE2CB-11B4-4526-A081-287421D6E83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2AE2CB-11B4-4526-A081-287421D6E83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2AE2CB-11B4-4526-A081-287421D6E83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2AE2CB-11B4-4526-A081-287421D6E83E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A679C152-194D-4491-B001-9576AA0FC595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A679C152-194D-4491-B001-9576AA0FC595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A679C152-194D-4491-B001-9576AA0FC595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A679C152-194D-4491-B001-9576AA0FC595}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
