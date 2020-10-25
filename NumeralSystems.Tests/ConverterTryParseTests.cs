@@ -98,19 +98,12 @@ namespace NumeralSystems.Tests
             }));
         }
 
-        [TestCase("37777777601", 8)]
-        [TestCase("37775330632", 8)]
-        [TestCase("37665330632", 8)]
-        [TestCase("-575432", 10)]
-        [TestCase("-11497074", 10)]
-        [TestCase("FFF5B198", 16)]
-        [TestCase("FFF509198", 16)]
         [TestCase("37789601", 8)]
         [TestCase("-5754AB2", 10)]
         [TestCase("FSW5B19-", 16)]
         public void TryParsePositiveByRadix_ReturnFalse_Tests(string source, int radix)
         {
-            bool actual = source.TryParsePositiveFromHex(out int _);
+            bool actual = source.TryParsePositiveByRadix(out int _);
             Assert.IsFalse(actual);
         }
 
