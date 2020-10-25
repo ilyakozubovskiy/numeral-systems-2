@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 
 #pragma warning disable CA1707
@@ -153,7 +153,7 @@ namespace NumeralSystems.Tests
         public void TryParseByRadix_ReturnFalse_Tests(string source, int radix)
         {
             bool actual = source.TryParseByRadix(radix, out int _);
-            Assert.IsTrue(actual);
+            Assert.IsFalse(actual);
         }
     }
 }
