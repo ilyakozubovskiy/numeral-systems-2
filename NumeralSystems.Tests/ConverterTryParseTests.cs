@@ -103,7 +103,7 @@ namespace NumeralSystems.Tests
         [TestCase("FSW5B19-", 16)]
         public void TryParsePositiveByRadix_ReturnFalse_Tests(string source, int radix)
         {
-            bool actual = source.TryParsePositiveByRadix(out int _);
+            bool actual = source.TryParsePositiveByRadix(radix, out int _);
             Assert.IsFalse(actual);
         }
 
