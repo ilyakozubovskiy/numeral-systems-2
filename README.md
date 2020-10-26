@@ -11,5 +11,5 @@
 - Implement a [TryParsePositiveByRadix](NumeralSystems/Converter.cs#L116) extention method that сonverts the string representation of a positive number in the octal, decimal or hex numeral system to its 32-bit signed integer equivalent. A return value indicates whether the conversion succeeded.
 - Implement a [TryParseByRadix](NumeralSystems/Converter.cs#L128) extention method that onverts the string representation of a signed number in the octal, decimal or hex numeral system to its 32-bit signed integer equivalent. A return value indicates whether the conversion succeeded.     
     The task definition is given in the XML-comments for the methods.     
-    _Restriction: Don't use Framework's converter classes, use only use only the capabilities of the C# language._
-    _Note: For negative integers their string representation is determined by binary representation in the additional code._    
+    _Restriction: Don't use Framework's converter classes, use only use only the capabilities of the C# language._       
+  
