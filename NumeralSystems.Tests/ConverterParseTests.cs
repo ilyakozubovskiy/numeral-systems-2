@@ -97,7 +97,6 @@ namespace NumeralSystems.Tests
         [TestCase("A4E6AFE", 16, ExpectedResult = 172911358)]
         [TestCase("A09912", 16, ExpectedResult = 10524946)]
         [TestCase("FFF5B198", 16, ExpectedResult = -675432)]
-        [TestCase("FFF509198", 16, ExpectedResult = -11497064)]
         public int ParseByRadix_Tests(string source, int radix) => source.ParseByRadix(radix);
         
         [TestCase(5)]
