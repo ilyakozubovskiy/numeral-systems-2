@@ -123,7 +123,6 @@ namespace NumeralSystems.Tests
         [TestCase("A4E6AFE", 16, 172911358)]
         [TestCase("A09912", 16, 10524946)]
         [TestCase("FFF5B198", 16, -675432)]
-        [TestCase("FFF509198", 16, -11497064)]
         public void TryParseByRadix_Tests(string source, int radix, int expectedValue)
         {
             bool actual = source.TryParseByRadix(radix, out int value);
