@@ -133,12 +133,6 @@ namespace NumeralSystems.Tests
             }));
         }
 
-        [TestCase(5)]
-        [TestCase(0)]
-        [TestCase(-6)]
-        public void ParseByRadix_RadixIsNot2or8or10or16_ThrowArgumentException(int radix) =>
-            Assert.Throws<ArgumentException>(() => "1".TryParseByRadix(radix, out int _), $"{nameof(radix)} is 8, 10 and 16 only.");
-
         [TestCase("37789601", 8)]
         [TestCase("-5754AB2", 10)]
         [TestCase("FSW5B19-", 16)]
