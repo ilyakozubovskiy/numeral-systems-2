@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using NUnit.Framework;
 
 #pragma warning disable CA1707
@@ -14,11 +14,11 @@ namespace NumeralSystems.Tests
         public void TryParsePositiveFromOctal_ReturnTrue_Tests(string source, int expectedValue)
         {
             bool actual = source.TryParsePositiveFromOctal(out int value);
-            Assert.Multiple((() =>
+            Assert.Multiple(() =>
             {
                 Assert.IsTrue(actual);
                 Assert.AreEqual(expectedValue, value);
-            }));
+            });
         }
 
         [TestCase("37777777601")]
@@ -39,11 +39,11 @@ namespace NumeralSystems.Tests
         public void TryParsePositiveFromDecimal_ReturnTrue_Tests(string source, int expectedValue)
         {
             bool actual = source.TryParsePositiveFromDecimal(out int value);
-            Assert.Multiple((() =>
+            Assert.Multiple(() =>
             {
                 Assert.IsTrue(actual);
                 Assert.AreEqual(expectedValue, value);
-            }));
+            });
         }
 
         [TestCase("-675432")]
@@ -65,11 +65,11 @@ namespace NumeralSystems.Tests
         public void TryParsePositiveFromHex_ReturnTrue_Tests(string source, int expectedValue)
         {
             bool actual = source.TryParsePositiveFromHex(out int value);
-            Assert.Multiple((() =>
+            Assert.Multiple(() =>
             {
                 Assert.IsTrue(actual);
                 Assert.AreEqual(expectedValue, value);
-            }));
+            });
         }
 
         [TestCase("FFF5B198")]
@@ -91,11 +91,11 @@ namespace NumeralSystems.Tests
         public void TryParsePositiveByRadix_ReturnTrue_Tests(string source, int radix, int expectedValue)
         {
             bool actual = source.TryParsePositiveByRadix(radix, out int value);
-            Assert.Multiple((() =>
+            Assert.Multiple(() =>
             {
                 Assert.IsTrue(actual);
                 Assert.AreEqual(expectedValue, value);
-            }));
+            });
         }
 
         [TestCase("37789601", 8)]
@@ -111,7 +111,8 @@ namespace NumeralSystems.Tests
         [TestCase(0)]
         [TestCase(-6)]
         public void TryParsePositiveByRadix_RadixIsNot2or8or10or16_ThrowArgumentException(int radix) =>
-            Assert.Throws<ArgumentException>(() => "1".TryParsePositiveByRadix(radix, out int _),
+            Assert.Throws<ArgumentException>(
+                () => "1".TryParsePositiveByRadix(radix, out int _),
                 $"{nameof(radix)} is 8, 10 and 16 only.");
 
         [TestCase("100001", 8, 32769)]
@@ -126,11 +127,11 @@ namespace NumeralSystems.Tests
         public void TryParseByRadix_Tests(string source, int radix, int expectedValue)
         {
             bool actual = source.TryParseByRadix(radix, out int value);
-            Assert.Multiple((() =>
+            Assert.Multiple(() =>
             {
                 Assert.IsTrue(actual);
                 Assert.AreEqual(expectedValue, value);
-            }));
+            });
         }
 
         [TestCase("37789601", 8)]
